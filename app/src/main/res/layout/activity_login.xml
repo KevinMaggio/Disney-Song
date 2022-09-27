@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FDDB53"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:fontFamily="@font/stylish"
+        android:text="Dysney Music random"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/background_home"
+        app:layout_constraintBottom_toTopOf="@+id/gl_ori_07"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_enter"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_home_enter"
+        android:text="enter"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/bt_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_home_next"
+        android:src="@drawable/ic_more"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quantity"
+        app:layout_constraintTop_toBottomOf="@+id/bt_enter" />
+
+    <ImageButton
+        android:id="@+id/bt_previous"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_home_next"
+        android:src="@drawable/ic_back"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/quantity"
+        app:layout_constraintTop_toBottomOf="@+id/bt_enter" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/quantity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_home_number"
+        android:src="@drawable/ic_back"
+        android:textColor="@color/white"
+        android:text="1"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_enter" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_ori_07"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

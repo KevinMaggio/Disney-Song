@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DisneySong">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.CongratsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.competitors.CompetitorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PlayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
